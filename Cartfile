@@ -1,0 +1,7 @@
+github "ReactiveCocoa/ReactiveCocoa" "master"
+github "Alamofire/Alamofire" "master"
+github "ikesyo/Himotoki" ~> 3.0
+github "Swinject/Swinject" "2.0.0-beta.2"
+github "Swinject/SwinjectStoryboard" "1.0.0-beta.2"
+github  "Quick/Quick" "master"
+github  "Quick/Nimble"

@@ -1,0 +1,1496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E068DCA1D9433FC000BA0AF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
+		0E068DCC1D9436A9000BA0AF /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCB1D9436A9000BA0AF /* Himotoki.framework */; };
+		0E068DCE1D9437C4000BA0AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCD1D9437C4000BA0AF /* Alamofire.framework */; };
+		0E60676D1D944D6A0039A5CC /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */; };
+		0E60676F1D944D860039A5CC /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */; };
+		0ED1A4A01D9441540034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
+		0ED1A4A21D9441F50034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
+		0ED1A4A31D9441FD0034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
+		0ED1A4A41D9442110034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
+		0ED1A4A51D9442190034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
+		0ED1A4A61D9442350034EDAE /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD11D9439B4000BA0AF /* SwinjectStoryboard.framework */; };
+		0ED1A4A71D9442380034EDAE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCF1D9439A6000BA0AF /* Swinject.framework */; };
+		0ED1A4A81D9442890034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
+		0ED1A4A91D94428F0034EDAE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD71D943E1E000BA0AF /* Nimble.framework */; };
+		0ED1A4AA1D9442930034EDAE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD51D943C2D000BA0AF /* Quick.framework */; };
+		0ED1A4AB1D9442A20034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
+		0ED1A4AC1D9442ED0034EDAE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCD1D9437C4000BA0AF /* Alamofire.framework */; };
+		0ED1A4AD1D9442FD0034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
+		0ED1A4AE1D9443010034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
+		0ED1A4AF1D9443090034EDAE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD71D943E1E000BA0AF /* Nimble.framework */; };
+		0ED1A4B01D94430D0034EDAE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD51D943C2D000BA0AF /* Quick.framework */; };
+		0ED1A4B11D9443220034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
+		0ED1A4B21D9443270034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
+		0ED1A4B31D9443320034EDAE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD71D943E1E000BA0AF /* Nimble.framework */; };
+		0ED1A4B41D9443360034EDAE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD51D943C2D000BA0AF /* Quick.framework */; };
+		0ED1A4B51D9443620034EDAE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCF1D9439A6000BA0AF /* Swinject.framework */; };
+		0ED1A4B61D9443670034EDAE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD71D943E1E000BA0AF /* Nimble.framework */; };
+		0ED1A4B71D94436C0034EDAE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DD51D943C2D000BA0AF /* Quick.framework */; };
+		0ED1A4C21D94442F0034EDAE /* Alamofire.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4B91D94442F0034EDAE /* Alamofire.framework.dSYM */; };
+		0ED1A4C31D94442F0034EDAE /* Himotoki.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BA1D94442F0034EDAE /* Himotoki.framework.dSYM */; };
+		0ED1A4C41D94442F0034EDAE /* Nimble.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BB1D94442F0034EDAE /* Nimble.framework.dSYM */; };
+		0ED1A4C51D94442F0034EDAE /* Quick.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BC1D94442F0034EDAE /* Quick.framework.dSYM */; };
+		0ED1A4C61D94442F0034EDAE /* ReactiveCocoa.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BD1D94442F0034EDAE /* ReactiveCocoa.framework.dSYM */; };
+		0ED1A4C71D94442F0034EDAE /* ReactiveSwift.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BE1D94442F0034EDAE /* ReactiveSwift.framework.dSYM */; };
+		0ED1A4C81D94442F0034EDAE /* Result.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BF1D94442F0034EDAE /* Result.framework.dSYM */; };
+		0ED1A4C91D94442F0034EDAE /* Swinject.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4C01D94442F0034EDAE /* Swinject.framework.dSYM */; };
+		0ED1A4CA1D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4C11D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM */; };
+		0EF100651D9187CB0013FFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF100641D9187CB0013FFCC /* AppDelegate.swift */; };
+		0EF100681D9187CB0013FFCC /* AlbumPoster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EF100661D9187CB0013FFCC /* AlbumPoster.xcdatamodeld */; };
+		0EF1006F1D9187CB0013FFCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF1006D1D9187CB0013FFCC /* Main.storyboard */; };
+		0EF100711D9187CB0013FFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF100701D9187CB0013FFCC /* Assets.xcassets */; };
+		0EF100741D9187CB0013FFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */; };
+		0EF1007F1D9187CB0013FFCC /* AlbumPosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */; };
+		0EF100971D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
+		0EF1009E1D9189070013FFCC /* AlbumPosterModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1009D1D9189070013FFCC /* AlbumPosterModelTests.swift */; };
+		0EF100A01D9189070013FFCC /* AlbumPosterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF100901D9189070013FFCC /* AlbumPosterModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF100A31D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
+		0EF100A41D9189070013FFCC /* AlbumPosterModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0EF100BA1D9189460013FFCC /* AlbumPosterViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */; };
+		0EF100C11D9189460013FFCC /* AlbumPosterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF100C01D9189460013FFCC /* AlbumPosterViewModelTests.swift */; };
+		0EF100C31D9189460013FFCC /* AlbumPosterViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF100B31D9189460013FFCC /* AlbumPosterViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF100C61D9189460013FFCC /* AlbumPosterViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */; };
+		0EF100C71D9189460013FFCC /* AlbumPosterViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0EF100DC1D9189880013FFCC /* AlbumPosterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100D31D9189870013FFCC /* AlbumPosterView.framework */; };
+		0EF100E31D9189880013FFCC /* AlbumPosterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF100E21D9189880013FFCC /* AlbumPosterViewTests.swift */; };
+		0EF100E51D9189880013FFCC /* AlbumPosterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF100D51D9189870013FFCC /* AlbumPosterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF100E81D9189880013FFCC /* AlbumPosterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100D31D9189870013FFCC /* AlbumPosterView.framework */; };
+		0EF100E91D9189880013FFCC /* AlbumPosterView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100D31D9189870013FFCC /* AlbumPosterView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0EF100F31D918B0C0013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
+		0EF100F61D918B360013FFCC /* AlbumPosterViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */; };
+		0EF100FB1D918C9D0013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
+		0EF100FC1D918D050013FFCC /* AlbumPosterViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */; };
+		0EF100FD1D918D210013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
+		0EF100FE1D918D240013FFCC /* AlbumPosterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100D31D9189870013FFCC /* AlbumPosterView.framework */; };
+		0EF100FF1D918D280013FFCC /* AlbumPosterViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EF100981D9189070013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF1008D1D9189070013FFCC;
+			remoteInfo = AlbumPosterModel;
+		};
+		0EF100A11D9189070013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF1008D1D9189070013FFCC;
+			remoteInfo = AlbumPosterModel;
+		};
+		0EF100BB1D9189460013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100B01D9189460013FFCC;
+			remoteInfo = AlbumPosterViewModel;
+		};
+		0EF100C41D9189460013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100B01D9189460013FFCC;
+			remoteInfo = AlbumPosterViewModel;
+		};
+		0EF100DD1D9189880013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100D21D9189870013FFCC;
+			remoteInfo = AlbumPosterView;
+		};
+		0EF100E61D9189880013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100D21D9189870013FFCC;
+			remoteInfo = AlbumPosterView;
+		};
+		0EF100F11D918AF70013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF1008D1D9189070013FFCC;
+			remoteInfo = AlbumPosterModel;
+		};
+		0EF100F41D918B310013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100B01D9189460013FFCC;
+			remoteInfo = AlbumPosterViewModel;
+		};
+		0EF100F71D918C420013FFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100601D9187CB0013FFCC;
+			remoteInfo = AlbumPoster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0ED1A4B81D9443BF0034EDAE /* Copy dSYMs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				0ED1A4C21D94442F0034EDAE /* Alamofire.framework.dSYM in Copy dSYMs */,
+				0ED1A4C31D94442F0034EDAE /* Himotoki.framework.dSYM in Copy dSYMs */,
+				0ED1A4C41D94442F0034EDAE /* Nimble.framework.dSYM in Copy dSYMs */,
+				0ED1A4C51D94442F0034EDAE /* Quick.framework.dSYM in Copy dSYMs */,
+				0ED1A4C61D94442F0034EDAE /* ReactiveCocoa.framework.dSYM in Copy dSYMs */,
+				0ED1A4C71D94442F0034EDAE /* ReactiveSwift.framework.dSYM in Copy dSYMs */,
+				0ED1A4C81D94442F0034EDAE /* Result.framework.dSYM in Copy dSYMs */,
+				0ED1A4C91D94442F0034EDAE /* Swinject.framework.dSYM in Copy dSYMs */,
+				0ED1A4CA1D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM in Copy dSYMs */,
+			);
+			name = "Copy dSYMs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100AA1D9189070013FFCC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0EF100C71D9189460013FFCC /* AlbumPosterViewModel.framework in Embed Frameworks */,
+				0EF100A41D9189070013FFCC /* AlbumPosterModel.framework in Embed Frameworks */,
+				0EF100E91D9189880013FFCC /* AlbumPosterView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		0E068DCB1D9436A9000BA0AF /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		0E068DCD1D9437C4000BA0AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0E068DCF1D9439A6000BA0AF /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		0E068DD11D9439B4000BA0AF /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		0E068DD51D943C2D000BA0AF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		0E068DD71D943E1E000BA0AF /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A49F1D9441540034EDAE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		0ED1A4B91D94442F0034EDAE /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4BA1D94442F0034EDAE /* Himotoki.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Himotoki.framework.dSYM; path = Carthage/Build/iOS/Himotoki.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4BB1D94442F0034EDAE /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/iOS/Nimble.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4BC1D94442F0034EDAE /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Quick.framework.dSYM; path = Carthage/Build/iOS/Quick.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4BD1D94442F0034EDAE /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4BE1D94442F0034EDAE /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4BF1D94442F0034EDAE /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4C01D94442F0034EDAE /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/iOS/Swinject.framework.dSYM; sourceTree = "<group>"; };
+		0ED1A4C11D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwinjectStoryboard.framework.dSYM; path = Carthage/Build/iOS/SwinjectStoryboard.framework.dSYM; sourceTree = "<group>"; };
+		0EF100611D9187CB0013FFCC /* AlbumPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF100641D9187CB0013FFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0EF100671D9187CB0013FFCC /* AlbumPoster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlbumPoster.xcdatamodel; sourceTree = "<group>"; };
+		0EF1006E1D9187CB0013FFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EF100701D9187CB0013FFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EF100731D9187CB0013FFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EF100751D9187CB0013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF1007A1D9187CB0013FFCC /* AlbumPosterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumPosterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosterTests.swift; sourceTree = "<group>"; };
+		0EF100801D9187CB0013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlbumPosterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF100901D9189070013FFCC /* AlbumPosterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumPosterModel.h; sourceTree = "<group>"; };
+		0EF100911D9189070013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF100961D9189070013FFCC /* AlbumPosterModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumPosterModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF1009D1D9189070013FFCC /* AlbumPosterModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosterModelTests.swift; sourceTree = "<group>"; };
+		0EF1009F1D9189070013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlbumPosterViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF100B31D9189460013FFCC /* AlbumPosterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumPosterViewModel.h; sourceTree = "<group>"; };
+		0EF100B41D9189460013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF100B91D9189460013FFCC /* AlbumPosterViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumPosterViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF100C01D9189460013FFCC /* AlbumPosterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosterViewModelTests.swift; sourceTree = "<group>"; };
+		0EF100C21D9189460013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF100D31D9189870013FFCC /* AlbumPosterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlbumPosterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF100D51D9189870013FFCC /* AlbumPosterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumPosterView.h; sourceTree = "<group>"; };
+		0EF100D61D9189870013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF100DB1D9189870013FFCC /* AlbumPosterViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumPosterViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF100E21D9189880013FFCC /* AlbumPosterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosterViewTests.swift; sourceTree = "<group>"; };
+		0EF100E41D9189880013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EF1005E1D9187CB0013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED1A4A61D9442350034EDAE /* SwinjectStoryboard.framework in Frameworks */,
+				0EF100C61D9189460013FFCC /* AlbumPosterViewModel.framework in Frameworks */,
+				0EF100A31D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */,
+				0ED1A4A71D9442380034EDAE /* Swinject.framework in Frameworks */,
+				0EF100E81D9189880013FFCC /* AlbumPosterView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100771D9187CB0013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED1A4B61D9443670034EDAE /* Nimble.framework in Frameworks */,
+				0EF100FF1D918D280013FFCC /* AlbumPosterViewModel.framework in Frameworks */,
+				0ED1A4B71D94436C0034EDAE /* Quick.framework in Frameworks */,
+				0ED1A4B51D9443620034EDAE /* Swinject.framework in Frameworks */,
+				0EF100FE1D918D240013FFCC /* AlbumPosterView.framework in Frameworks */,
+				0EF100FD1D918D210013FFCC /* AlbumPosterModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF1008A1D9189070013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E068DCC1D9436A9000BA0AF /* Himotoki.framework in Frameworks */,
+				0ED1A4A01D9441540034EDAE /* Result.framework in Frameworks */,
+				0E60676D1D944D6A0039A5CC /* ReactiveSwift.framework in Frameworks */,
+				0E068DCE1D9437C4000BA0AF /* Alamofire.framework in Frameworks */,
+				0E068DCA1D9433FC000BA0AF /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100931D9189070013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED1A4AA1D9442930034EDAE /* Quick.framework in Frameworks */,
+				0ED1A4A91D94428F0034EDAE /* Nimble.framework in Frameworks */,
+				0EF100971D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */,
+				0ED1A4A81D9442890034EDAE /* Result.framework in Frameworks */,
+				0ED1A4AB1D9442A20034EDAE /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100AD1D9189460013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100F31D918B0C0013FFCC /* AlbumPosterModel.framework in Frameworks */,
+				0ED1A4A31D9441FD0034EDAE /* ReactiveCocoa.framework in Frameworks */,
+				0ED1A4A21D9441F50034EDAE /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100B61D9189460013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100FB1D918C9D0013FFCC /* AlbumPosterModel.framework in Frameworks */,
+				0ED1A4AC1D9442ED0034EDAE /* Alamofire.framework in Frameworks */,
+				0EF100BA1D9189460013FFCC /* AlbumPosterViewModel.framework in Frameworks */,
+				0ED1A4AF1D9443090034EDAE /* Nimble.framework in Frameworks */,
+				0ED1A4AD1D9442FD0034EDAE /* Result.framework in Frameworks */,
+				0ED1A4AE1D9443010034EDAE /* ReactiveCocoa.framework in Frameworks */,
+				0ED1A4B01D94430D0034EDAE /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100CF1D9189870013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED1A4A51D9442190034EDAE /* Result.framework in Frameworks */,
+				0EF100F61D918B360013FFCC /* AlbumPosterViewModel.framework in Frameworks */,
+				0ED1A4A41D9442110034EDAE /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100D81D9189870013FFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED1A4B31D9443320034EDAE /* Nimble.framework in Frameworks */,
+				0EF100FC1D918D050013FFCC /* AlbumPosterViewModel.framework in Frameworks */,
+				0ED1A4B41D9443360034EDAE /* Quick.framework in Frameworks */,
+				0ED1A4B11D9443220034EDAE /* ReactiveCocoa.framework in Frameworks */,
+				0EF100DC1D9189880013FFCC /* AlbumPosterView.framework in Frameworks */,
+				0ED1A4B21D9443270034EDAE /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E7866FD1D919AF3006907A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */,
+				0ED1A4CB1D9444740034EDAE /* dSYMs */,
+				0ED1A49F1D9441540034EDAE /* Result.framework */,
+				0E068DD71D943E1E000BA0AF /* Nimble.framework */,
+				0E068DD51D943C2D000BA0AF /* Quick.framework */,
+				0E068DD11D9439B4000BA0AF /* SwinjectStoryboard.framework */,
+				0E068DCF1D9439A6000BA0AF /* Swinject.framework */,
+				0E068DCD1D9437C4000BA0AF /* Alamofire.framework */,
+				0E068DCB1D9436A9000BA0AF /* Himotoki.framework */,
+				0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ED1A4CB1D9444740034EDAE /* dSYMs */ = {
+			isa = PBXGroup;
+			children = (
+				0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */,
+				0ED1A4B91D94442F0034EDAE /* Alamofire.framework.dSYM */,
+				0ED1A4BA1D94442F0034EDAE /* Himotoki.framework.dSYM */,
+				0ED1A4BB1D94442F0034EDAE /* Nimble.framework.dSYM */,
+				0ED1A4BC1D94442F0034EDAE /* Quick.framework.dSYM */,
+				0ED1A4BD1D94442F0034EDAE /* ReactiveCocoa.framework.dSYM */,
+				0ED1A4BE1D94442F0034EDAE /* ReactiveSwift.framework.dSYM */,
+				0ED1A4BF1D94442F0034EDAE /* Result.framework.dSYM */,
+				0ED1A4C01D94442F0034EDAE /* Swinject.framework.dSYM */,
+				0ED1A4C11D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM */,
+			);
+			name = dSYMs;
+			sourceTree = "<group>";
+		};
+		0EF100581D9187CB0013FFCC = {
+			isa = PBXGroup;
+			children = (
+				0EF1008F1D9189070013FFCC /* AlbumPosterModel */,
+				0EF100B21D9189460013FFCC /* AlbumPosterViewModel */,
+				0EF100D41D9189870013FFCC /* AlbumPosterView */,
+				0EF100631D9187CB0013FFCC /* AlbumPoster */,
+				0EF100F01D9189A40013FFCC /* Tests */,
+				0E7866FD1D919AF3006907A2 /* Frameworks */,
+				0EF100621D9187CB0013FFCC /* Products */,
+				A00FA52D11427CA597728E36 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0EF100621D9187CB0013FFCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100611D9187CB0013FFCC /* AlbumPoster.app */,
+				0EF1007A1D9187CB0013FFCC /* AlbumPosterTests.xctest */,
+				0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */,
+				0EF100961D9189070013FFCC /* AlbumPosterModelTests.xctest */,
+				0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */,
+				0EF100B91D9189460013FFCC /* AlbumPosterViewModelTests.xctest */,
+				0EF100D31D9189870013FFCC /* AlbumPosterView.framework */,
+				0EF100DB1D9189870013FFCC /* AlbumPosterViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EF100631D9187CB0013FFCC /* AlbumPoster */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100641D9187CB0013FFCC /* AppDelegate.swift */,
+				0EF1006D1D9187CB0013FFCC /* Main.storyboard */,
+				0EF100701D9187CB0013FFCC /* Assets.xcassets */,
+				0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */,
+				0EF100751D9187CB0013FFCC /* Info.plist */,
+				0EF100661D9187CB0013FFCC /* AlbumPoster.xcdatamodeld */,
+			);
+			path = AlbumPoster;
+			sourceTree = "<group>";
+		};
+		0EF1007D1D9187CB0013FFCC /* AlbumPosterTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */,
+				0EF100801D9187CB0013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterTests;
+			sourceTree = "<group>";
+		};
+		0EF1008F1D9189070013FFCC /* AlbumPosterModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100901D9189070013FFCC /* AlbumPosterModel.h */,
+				0EF100911D9189070013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterModel;
+			sourceTree = "<group>";
+		};
+		0EF1009C1D9189070013FFCC /* AlbumPosterModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EF1009D1D9189070013FFCC /* AlbumPosterModelTests.swift */,
+				0EF1009F1D9189070013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterModelTests;
+			sourceTree = "<group>";
+		};
+		0EF100B21D9189460013FFCC /* AlbumPosterViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100B31D9189460013FFCC /* AlbumPosterViewModel.h */,
+				0EF100B41D9189460013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterViewModel;
+			sourceTree = "<group>";
+		};
+		0EF100BF1D9189460013FFCC /* AlbumPosterViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100C01D9189460013FFCC /* AlbumPosterViewModelTests.swift */,
+				0EF100C21D9189460013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterViewModelTests;
+			sourceTree = "<group>";
+		};
+		0EF100D41D9189870013FFCC /* AlbumPosterView */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100D51D9189870013FFCC /* AlbumPosterView.h */,
+				0EF100D61D9189870013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterView;
+			sourceTree = "<group>";
+		};
+		0EF100E11D9189880013FFCC /* AlbumPosterViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EF100E21D9189880013FFCC /* AlbumPosterViewTests.swift */,
+				0EF100E41D9189880013FFCC /* Info.plist */,
+			);
+			path = AlbumPosterViewTests;
+			sourceTree = "<group>";
+		};
+		0EF100F01D9189A40013FFCC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0EF1007D1D9187CB0013FFCC /* AlbumPosterTests */,
+				0EF100BF1D9189460013FFCC /* AlbumPosterViewModelTests */,
+				0EF100E11D9189880013FFCC /* AlbumPosterViewTests */,
+				0EF1009C1D9189070013FFCC /* AlbumPosterModelTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		A00FA52D11427CA597728E36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EF1008B1D9189070013FFCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100A01D9189070013FFCC /* AlbumPosterModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100AE1D9189460013FFCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100C31D9189460013FFCC /* AlbumPosterViewModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100D01D9189870013FFCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100E51D9189880013FFCC /* AlbumPosterView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EF100601D9187CB0013FFCC /* AlbumPoster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100831D9187CB0013FFCC /* Build configuration list for PBXNativeTarget "AlbumPoster" */;
+			buildPhases = (
+				0EF1005D1D9187CB0013FFCC /* Sources */,
+				0EF1005E1D9187CB0013FFCC /* Frameworks */,
+				0EF1005F1D9187CB0013FFCC /* Resources */,
+				0EF100AA1D9189070013FFCC /* Embed Frameworks */,
+				0ED1A4B81D9443BF0034EDAE /* Copy dSYMs */,
+				0ED1A4CC1D94455F0034EDAE /* Run Script for Frameworks by carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100A21D9189070013FFCC /* PBXTargetDependency */,
+				0EF100C51D9189460013FFCC /* PBXTargetDependency */,
+				0EF100E71D9189880013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPoster;
+			productName = AlbumPoster;
+			productReference = 0EF100611D9187CB0013FFCC /* AlbumPoster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EF100791D9187CB0013FFCC /* AlbumPosterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100861D9187CB0013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterTests" */;
+			buildPhases = (
+				0EF100761D9187CB0013FFCC /* Sources */,
+				0EF100771D9187CB0013FFCC /* Frameworks */,
+				0EF100781D9187CB0013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100F81D918C420013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPosterTests;
+			productName = AlbumPosterTests;
+			productReference = 0EF1007A1D9187CB0013FFCC /* AlbumPosterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EF1008D1D9189070013FFCC /* AlbumPosterModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100A91D9189070013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterModel" */;
+			buildPhases = (
+				0EF100891D9189070013FFCC /* Sources */,
+				0EF1008A1D9189070013FFCC /* Frameworks */,
+				0EF1008B1D9189070013FFCC /* Headers */,
+				0EF1008C1D9189070013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlbumPosterModel;
+			productName = AlbumPosterModel;
+			productReference = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0EF100951D9189070013FFCC /* AlbumPosterModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100AB1D9189070013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterModelTests" */;
+			buildPhases = (
+				0EF100921D9189070013FFCC /* Sources */,
+				0EF100931D9189070013FFCC /* Frameworks */,
+				0EF100941D9189070013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100991D9189070013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPosterModelTests;
+			productName = AlbumPosterModelTests;
+			productReference = 0EF100961D9189070013FFCC /* AlbumPosterModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EF100B01D9189460013FFCC /* AlbumPosterViewModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100C81D9189460013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterViewModel" */;
+			buildPhases = (
+				0EF100AC1D9189460013FFCC /* Sources */,
+				0EF100AD1D9189460013FFCC /* Frameworks */,
+				0EF100AE1D9189460013FFCC /* Headers */,
+				0EF100AF1D9189460013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100F21D918AF70013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPosterViewModel;
+			productName = AlbumPosterViewModel;
+			productReference = 0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0EF100B81D9189460013FFCC /* AlbumPosterViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100CB1D9189460013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterViewModelTests" */;
+			buildPhases = (
+				0EF100B51D9189460013FFCC /* Sources */,
+				0EF100B61D9189460013FFCC /* Frameworks */,
+				0EF100B71D9189460013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100BC1D9189460013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPosterViewModelTests;
+			productName = AlbumPosterViewModelTests;
+			productReference = 0EF100B91D9189460013FFCC /* AlbumPosterViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EF100D21D9189870013FFCC /* AlbumPosterView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100EA1D9189880013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterView" */;
+			buildPhases = (
+				0EF100CE1D9189870013FFCC /* Sources */,
+				0EF100CF1D9189870013FFCC /* Frameworks */,
+				0EF100D01D9189870013FFCC /* Headers */,
+				0EF100D11D9189870013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100F51D918B310013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPosterView;
+			productName = AlbumPosterView;
+			productReference = 0EF100D31D9189870013FFCC /* AlbumPosterView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0EF100DA1D9189870013FFCC /* AlbumPosterViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF100ED1D9189880013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterViewTests" */;
+			buildPhases = (
+				0EF100D71D9189870013FFCC /* Sources */,
+				0EF100D81D9189870013FFCC /* Frameworks */,
+				0EF100D91D9189870013FFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF100DE1D9189880013FFCC /* PBXTargetDependency */,
+			);
+			name = AlbumPosterViewTests;
+			productName = AlbumPosterViewTests;
+			productReference = 0EF100DB1D9189870013FFCC /* AlbumPosterViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EF100591D9187CB0013FFCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "e-szafranski.com";
+				TargetAttributes = {
+					0EF100601D9187CB0013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0EF100791D9187CB0013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0EF100601D9187CB0013FFCC;
+					};
+					0EF1008D1D9189070013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						ProvisioningStyle = Automatic;
+					};
+					0EF100951D9189070013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0EF100B01D9189460013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						ProvisioningStyle = Automatic;
+					};
+					0EF100B81D9189460013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0EF100D21D9189870013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						ProvisioningStyle = Automatic;
+					};
+					0EF100DA1D9189870013FFCC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0EF1005C1D9187CB0013FFCC /* Build configuration list for PBXProject "AlbumPoster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EF100581D9187CB0013FFCC;
+			productRefGroup = 0EF100621D9187CB0013FFCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EF1008D1D9189070013FFCC /* AlbumPosterModel */,
+				0EF100B01D9189460013FFCC /* AlbumPosterViewModel */,
+				0EF100D21D9189870013FFCC /* AlbumPosterView */,
+				0EF100601D9187CB0013FFCC /* AlbumPoster */,
+				0EF100791D9187CB0013FFCC /* AlbumPosterTests */,
+				0EF100951D9189070013FFCC /* AlbumPosterModelTests */,
+				0EF100B81D9189460013FFCC /* AlbumPosterViewModelTests */,
+				0EF100DA1D9189870013FFCC /* AlbumPosterViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EF1005F1D9187CB0013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100741D9187CB0013FFCC /* LaunchScreen.storyboard in Resources */,
+				0EF100711D9187CB0013FFCC /* Assets.xcassets in Resources */,
+				0EF1006F1D9187CB0013FFCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100781D9187CB0013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF1008C1D9189070013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E60676F1D944D860039A5CC /* ReactiveSwift.framework.dSYM in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100941D9189070013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100AF1D9189460013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100B71D9189460013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100D11D9189870013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100D91D9189870013FFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ED1A4CC1D94455F0034EDAE /* Run Script for Frameworks by carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+			);
+			name = "Run Script for Frameworks by carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EF1005D1D9187CB0013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100681D9187CB0013FFCC /* AlbumPoster.xcdatamodeld in Sources */,
+				0EF100651D9187CB0013FFCC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100761D9187CB0013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF1007F1D9187CB0013FFCC /* AlbumPosterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100891D9189070013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100921D9189070013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF1009E1D9189070013FFCC /* AlbumPosterModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100AC1D9189460013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100B51D9189460013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100C11D9189460013FFCC /* AlbumPosterViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100CE1D9189870013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF100D71D9189870013FFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF100E31D9189880013FFCC /* AlbumPosterViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EF100991D9189070013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF1008D1D9189070013FFCC /* AlbumPosterModel */;
+			targetProxy = 0EF100981D9189070013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100A21D9189070013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF1008D1D9189070013FFCC /* AlbumPosterModel */;
+			targetProxy = 0EF100A11D9189070013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100BC1D9189460013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100B01D9189460013FFCC /* AlbumPosterViewModel */;
+			targetProxy = 0EF100BB1D9189460013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100C51D9189460013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100B01D9189460013FFCC /* AlbumPosterViewModel */;
+			targetProxy = 0EF100C41D9189460013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100DE1D9189880013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100D21D9189870013FFCC /* AlbumPosterView */;
+			targetProxy = 0EF100DD1D9189880013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100E71D9189880013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100D21D9189870013FFCC /* AlbumPosterView */;
+			targetProxy = 0EF100E61D9189880013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100F21D918AF70013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF1008D1D9189070013FFCC /* AlbumPosterModel */;
+			targetProxy = 0EF100F11D918AF70013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100F51D918B310013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100B01D9189460013FFCC /* AlbumPosterViewModel */;
+			targetProxy = 0EF100F41D918B310013FFCC /* PBXContainerItemProxy */;
+		};
+		0EF100F81D918C420013FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100601D9187CB0013FFCC /* AlbumPoster */;
+			targetProxy = 0EF100F71D918C420013FFCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0EF1006D1D9187CB0013FFCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF1006E1D9187CB0013FFCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF100731D9187CB0013FFCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EF100811D9187CB0013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EF100821D9187CB0013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EF100841D9187CB0013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPoster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPoster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0EF100851D9187CB0013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPoster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPoster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0EF100871D9187CB0013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
+			};
+			name = Debug;
+		};
+		0EF100881D9187CB0013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
+			};
+			name = Release;
+		};
+		0EF100A51D9189070013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0EF100A61D9189070013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EF100A71D9189070013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0EF100A81D9189070013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0EF100C91D9189460013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0EF100CA1D9189460013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EF100CC1D9189460013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0EF100CD1D9189460013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0EF100EB1D9189880013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0EF100EC1D9189880013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EF100EE1D9189880013FFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0EF100EF1D9189880013FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DM3YMKBS2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AlbumPosterViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EF1005C1D9187CB0013FFCC /* Build configuration list for PBXProject "AlbumPoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100811D9187CB0013FFCC /* Debug */,
+				0EF100821D9187CB0013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100831D9187CB0013FFCC /* Build configuration list for PBXNativeTarget "AlbumPoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100841D9187CB0013FFCC /* Debug */,
+				0EF100851D9187CB0013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100861D9187CB0013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100871D9187CB0013FFCC /* Debug */,
+				0EF100881D9187CB0013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100A91D9189070013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100A51D9189070013FFCC /* Debug */,
+				0EF100A61D9189070013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100AB1D9189070013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100A71D9189070013FFCC /* Debug */,
+				0EF100A81D9189070013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100C81D9189460013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterViewModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100C91D9189460013FFCC /* Debug */,
+				0EF100CA1D9189460013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100CB1D9189460013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100CC1D9189460013FFCC /* Debug */,
+				0EF100CD1D9189460013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100EA1D9189880013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100EB1D9189880013FFCC /* Debug */,
+				0EF100EC1D9189880013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF100ED1D9189880013FFCC /* Build configuration list for PBXNativeTarget "AlbumPosterViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF100EE1D9189880013FFCC /* Debug */,
+				0EF100EF1D9189880013FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0EF100661D9187CB0013FFCC /* AlbumPoster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0EF100671D9187CB0013FFCC /* AlbumPoster.xcdatamodel */,
+			);
+			currentVersion = 0EF100671D9187CB0013FFCC /* AlbumPoster.xcdatamodel */;
+			path = AlbumPoster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0EF100591D9187CB0013FFCC /* Project object */;
+}

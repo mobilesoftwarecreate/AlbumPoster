@@ -10,8 +10,14 @@
 		0E068DCA1D9433FC000BA0AF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
 		0E068DCC1D9436A9000BA0AF /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCB1D9436A9000BA0AF /* Himotoki.framework */; };
 		0E068DCE1D9437C4000BA0AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCD1D9437C4000BA0AF /* Alamofire.framework */; };
+		0E3CF6D11D9ADF8900C14245 /* PostEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857071D9ADBDE00057ACC /* PostEntitySpec.swift */; };
+		0E3CF6D21D9ADFA000C14245 /* FakeObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857051D9ADAAA00057ACC /* FakeObjects.swift */; };
 		0E60676D1D944D6A0039A5CC /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */; };
 		0E60676F1D944D860039A5CC /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */; };
+		0E6856FE1D9AD1B700057ACC /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6856FD1D9AD1B700057ACC /* PostEntity.swift */; };
+		0E6857001D9AD25B00057ACC /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6856FF1D9AD25B00057ACC /* UserEntity.swift */; };
+		0E6857021D9AD2EA00057ACC /* AlbumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857011D9AD2EA00057ACC /* AlbumEntity.swift */; };
+		0E6857041D9AD38A00057ACC /* PhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857031D9AD38A00057ACC /* PhotoEntity.swift */; };
 		0ED1A4A01D9441540034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
 		0ED1A4A21D9441F50034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
 		0ED1A4A31D9441FD0034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
@@ -51,7 +57,6 @@
 		0EF100741D9187CB0013FFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */; };
 		0EF1007F1D9187CB0013FFCC /* AlbumPosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */; };
 		0EF100971D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
-		0EF1009E1D9189070013FFCC /* AlbumPosterModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1009D1D9189070013FFCC /* AlbumPosterModelTests.swift */; };
 		0EF100A01D9189070013FFCC /* AlbumPosterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF100901D9189070013FFCC /* AlbumPosterModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EF100A31D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
 		0EF100A41D9189070013FFCC /* AlbumPosterModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -75,6 +80,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0E3CF6D31D9AEBBD00C14245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100601D9187CB0013FFCC;
+			remoteInfo = AlbumPoster;
+		};
+		0E3CF6D51D9AEBF500C14245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100601D9187CB0013FFCC;
+			remoteInfo = AlbumPoster;
+		};
+		0E3CF6D71D9AEBF900C14245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF100601D9187CB0013FFCC;
+			remoteInfo = AlbumPoster;
+		};
 		0EF100981D9189070013FFCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0EF100591D9187CB0013FFCC /* Project object */;
@@ -185,6 +211,12 @@
 		0E068DD71D943E1E000BA0AF /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		0E6856FD1D9AD1B700057ACC /* PostEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		0E6856FF1D9AD25B00057ACC /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		0E6857011D9AD2EA00057ACC /* AlbumEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumEntity.swift; sourceTree = "<group>"; };
+		0E6857031D9AD38A00057ACC /* PhotoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoEntity.swift; sourceTree = "<group>"; };
+		0E6857051D9ADAAA00057ACC /* FakeObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeObjects.swift; sourceTree = "<group>"; };
+		0E6857071D9ADBDE00057ACC /* PostEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEntitySpec.swift; sourceTree = "<group>"; };
 		0ED1A49F1D9441540034EDAE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		0ED1A4B91D94442F0034EDAE /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		0ED1A4BA1D94442F0034EDAE /* Himotoki.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Himotoki.framework.dSYM; path = Carthage/Build/iOS/Himotoki.framework.dSYM; sourceTree = "<group>"; };
@@ -209,7 +241,6 @@
 		0EF100901D9189070013FFCC /* AlbumPosterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumPosterModel.h; sourceTree = "<group>"; };
 		0EF100911D9189070013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF100961D9189070013FFCC /* AlbumPosterModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumPosterModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EF1009D1D9189070013FFCC /* AlbumPosterModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosterModelTests.swift; sourceTree = "<group>"; };
 		0EF1009F1D9189070013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF100B11D9189460013FFCC /* AlbumPosterViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlbumPosterViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF100B31D9189460013FFCC /* AlbumPosterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumPosterViewModel.h; sourceTree = "<group>"; };
@@ -415,6 +446,10 @@
 			children = (
 				0EF100901D9189070013FFCC /* AlbumPosterModel.h */,
 				0EF100911D9189070013FFCC /* Info.plist */,
+				0E6856FD1D9AD1B700057ACC /* PostEntity.swift */,
+				0E6856FF1D9AD25B00057ACC /* UserEntity.swift */,
+				0E6857011D9AD2EA00057ACC /* AlbumEntity.swift */,
+				0E6857031D9AD38A00057ACC /* PhotoEntity.swift */,
 			);
 			path = AlbumPosterModel;
 			sourceTree = "<group>";
@@ -422,8 +457,9 @@
 		0EF1009C1D9189070013FFCC /* AlbumPosterModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				0EF1009D1D9189070013FFCC /* AlbumPosterModelTests.swift */,
 				0EF1009F1D9189070013FFCC /* Info.plist */,
+				0E6857051D9ADAAA00057ACC /* FakeObjects.swift */,
+				0E6857071D9ADBDE00057ACC /* PostEntitySpec.swift */,
 			);
 			path = AlbumPosterModelTests;
 			sourceTree = "<group>";
@@ -583,6 +619,7 @@
 			);
 			dependencies = (
 				0EF100991D9189070013FFCC /* PBXTargetDependency */,
+				0E3CF6D41D9AEBBD00C14245 /* PBXTargetDependency */,
 			);
 			name = AlbumPosterModelTests;
 			productName = AlbumPosterModelTests;
@@ -620,6 +657,7 @@
 			);
 			dependencies = (
 				0EF100BC1D9189460013FFCC /* PBXTargetDependency */,
+				0E3CF6D61D9AEBF500C14245 /* PBXTargetDependency */,
 			);
 			name = AlbumPosterViewModelTests;
 			productName = AlbumPosterViewModelTests;
@@ -657,6 +695,7 @@
 			);
 			dependencies = (
 				0EF100DE1D9189880013FFCC /* PBXTargetDependency */,
+				0E3CF6D81D9AEBF900C14245 /* PBXTargetDependency */,
 			);
 			name = AlbumPosterViewTests;
 			productName = AlbumPosterViewTests;
@@ -689,6 +728,7 @@
 					0EF1008D1D9189070013FFCC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					0EF100951D9189070013FFCC = {
@@ -696,6 +736,7 @@
 						DevelopmentTeam = DM3YMKBS2W;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 0EF100601D9187CB0013FFCC;
 					};
 					0EF100B01D9189460013FFCC = {
 						CreatedOnToolsVersion = 8.0;
@@ -707,6 +748,7 @@
 						DevelopmentTeam = DM3YMKBS2W;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 0EF100601D9187CB0013FFCC;
 					};
 					0EF100D21D9189870013FFCC = {
 						CreatedOnToolsVersion = 8.0;
@@ -718,6 +760,7 @@
 						DevelopmentTeam = DM3YMKBS2W;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 0EF100601D9187CB0013FFCC;
 					};
 				};
 			};
@@ -857,6 +900,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6857021D9AD2EA00057ACC /* AlbumEntity.swift in Sources */,
+				0E6856FE1D9AD1B700057ACC /* PostEntity.swift in Sources */,
+				0E6857001D9AD25B00057ACC /* UserEntity.swift in Sources */,
+				0E6857041D9AD38A00057ACC /* PhotoEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,7 +911,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF1009E1D9189070013FFCC /* AlbumPosterModelTests.swift in Sources */,
+				0E3CF6D11D9ADF8900C14245 /* PostEntitySpec.swift in Sources */,
+				0E3CF6D21D9ADFA000C14245 /* FakeObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +949,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0E3CF6D41D9AEBBD00C14245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100601D9187CB0013FFCC /* AlbumPoster */;
+			targetProxy = 0E3CF6D31D9AEBBD00C14245 /* PBXContainerItemProxy */;
+		};
+		0E3CF6D61D9AEBF500C14245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100601D9187CB0013FFCC /* AlbumPoster */;
+			targetProxy = 0E3CF6D51D9AEBF500C14245 /* PBXContainerItemProxy */;
+		};
+		0E3CF6D81D9AEBF900C14245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF100601D9187CB0013FFCC /* AlbumPoster */;
+			targetProxy = 0E3CF6D71D9AEBF900C14245 /* PBXContainerItemProxy */;
+		};
 		0EF100991D9189070013FFCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0EF1008D1D9189070013FFCC /* AlbumPosterModel */;
@@ -1066,6 +1129,7 @@
 		0EF100841D9187CB0013FFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DM3YMKBS2W;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1083,6 +1147,7 @@
 		0EF100851D9187CB0013FFCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DM3YMKBS2W;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1138,6 +1203,7 @@
 		0EF100A51D9189070013FFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1155,6 +1221,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1164,6 +1231,7 @@
 		0EF100A61D9189070013FFCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1201,6 +1269,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
 			name = Debug;
 		};
@@ -1218,6 +1287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterModelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
 			name = Release;
 		};
@@ -1287,6 +1357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
 			name = Debug;
 		};
@@ -1304,6 +1375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
 			name = Release;
 		};
@@ -1373,6 +1445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
 			name = Debug;
 		};
@@ -1390,6 +1463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
 			name = Release;
 		};

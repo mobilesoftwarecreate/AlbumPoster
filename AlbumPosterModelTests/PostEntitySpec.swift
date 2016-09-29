@@ -11,7 +11,6 @@ import Quick
 import Nimble
 import Himotoki
 
-import XCTest
 @testable import AlbumPosterModel
 
 class PostEntitySpec: QuickSpec {

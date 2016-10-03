@@ -24,29 +24,58 @@ class NetworkSpec: QuickSpec {
 			it("eventually gets JSON data as specified with parameters.") {
 				var json: [String: Any]? = nil
 				let url = "https://httpbin.org/get"
-				let producer = network.requestJson(url: url, parameters: ["a": "b" as Any, "x": "Y" as Any])
-				producer.on(starting: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, started: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, event: <#T##((Event<Any, NetworkError>) -> Void)?##((Event<Any, NetworkError>) -> Void)?##(Event<Any, NetworkError>) -> Void#>, value: <#T##((Any) -> Void)?##((Any) -> Void)?##(Any) -> Void#>, failed: <#T##((NetworkError) -> Void)?##((NetworkError) -> Void)?##(NetworkError) -> Void#>, completed: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, interrupted: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, terminated: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, disposed: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>).start()
-				
-				
-				//.on(next: { json = $0 as? [String: Any]}).start()
-				
-				
-				network.requestJSON(url: url, parameters: ["a": "b", "x": "y"])
-					.on(next: { json = $0 as? [String: Any] })
-					.start()
+				network.requestJson(url: url, parameters: ["a": "b" as Any, "x": "y" as Any])
+					.on(starting: {
+							print("Starting")
+						}, started: {
+							print("Started")
+						}, value: {
+							value in
+							print("Next: \(value)")
+							json = value as? [String: Any]
+						}, failed: {
+							error in
+							print("Failed: \(error)")
+						}, completed: {
+							print("completed")
+						}, interrupted: {
+							print("interrupted")
+						}, terminated: {
+							print("terminated")
+						}, disposed: {
+							print("disposed")
+					}).start()
 				
 				expect(json).toEventuallyNot(beNil(), timeout: 5)
-				expect((json?["args"] as? [String: AnyObject])?["a"] as? String)
+				expect((json?["args"] as? [String: Any])?["a"] as? String)
 					.toEventually(equal("b"), timeout: 5)
-				expect((json?["args"] as? [String: AnyObject])?["x"] as? String)
+				expect((json?["args"] as? [String: Any])?["x"] as? String)
 					.toEventually(equal("y"), timeout: 5)
 			}
 			it("eventually gets an error if the network has a problem.") {
 				var error: NetworkError? = nil
 				let url = "https://not.existing.server.comm/get"
-				network.requestJSON(url: url, parameters: ["a": "b", "x": "y"])
-					.on(failed: { error = $0 })
-					.start()
+				network.requestJson(url: url, parameters: ["a": "b" as Any, "x": "y" as Any])
+					.on(starting: {
+						print("Starting")
+						}, started: {
+							print("Started")
+						}, value: {
+							value in
+							print("Next: \(value)")
+						}, failed: {
+							error2 in
+							print("Failed: \(error2)")
+							error =  error2
+						}, completed: {
+							print("completed")
+						}, interrupted: {
+							print("interrupted")
+						}, terminated: {
+							print("terminated")
+						}, disposed: {
+							print("disposed")
+					}).start()
 				
 				expect(error)
 					.toEventually(equal(NetworkError.NotReachedServer), timeout: 5)

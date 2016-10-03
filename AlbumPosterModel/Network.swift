@@ -23,7 +23,7 @@ public final class Network: Networking {
 				response in
 				switch response.result {
 				case .success(let value):
-					observer.send(value: value as AnyObject)
+					observer.send(value: value as Any)
 					observer.sendCompleted()
 				case .failure(let error):
 					observer.send(error: NetworkError(error: error as NSError))
@@ -31,6 +31,4 @@ public final class Network: Networking {
 			}
 		}
 	}
-	
-	
 }

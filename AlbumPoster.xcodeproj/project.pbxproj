@@ -12,6 +12,7 @@
 		0E068DCE1D9437C4000BA0AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DCD1D9437C4000BA0AF /* Alamofire.framework */; };
 		0E3CF6D11D9ADF8900C14245 /* PostEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857071D9ADBDE00057ACC /* PostEntitySpec.swift */; };
 		0E3CF6D21D9ADFA000C14245 /* FakeObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857051D9ADAAA00057ACC /* FakeObjects.swift */; };
+		0E58DC061DA3FA4D007C4646 /* PostSearchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58DC051DA3FA4D007C4646 /* PostSearchSpec.swift */; };
 		0E60676D1D944D6A0039A5CC /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */; };
 		0E60676F1D944D860039A5CC /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */; };
 		0E6856FE1D9AD1B700057ACC /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6856FD1D9AD1B700057ACC /* PostEntity.swift */; };
@@ -25,6 +26,9 @@
 		0E7A53BE1D9D7E2F00135105 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A53BD1D9D7E2F00135105 /* Network.swift */; };
 		0E7A53C01D9D88E400135105 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A53BF1D9D88E400135105 /* NetworkError.swift */; };
 		0E7A53C31D9D8BB000135105 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A53C11D9D8BA300135105 /* NetworkSpec.swift */; };
+		0E7A53C51DA2C57200135105 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A53C41DA2C57200135105 /* PostRequest.swift */; };
+		0E7A53C71DA2C80700135105 /* PostSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A53C61DA2C80700135105 /* PostSearching.swift */; };
+		0E7A53C91DA2C92300135105 /* PostSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A53C81DA2C92300135105 /* PostSearch.swift */; };
 		0ED1A4A01D9441540034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
 		0ED1A4A21D9441F50034EDAE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED1A49F1D9441540034EDAE /* Result.framework */; };
 		0ED1A4A31D9441FD0034EDAE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E068DC91D9433FC000BA0AF /* ReactiveCocoa.framework */; };
@@ -216,6 +220,7 @@
 		0E068DD11D9439B4000BA0AF /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		0E068DD51D943C2D000BA0AF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0E068DD71D943E1E000BA0AF /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		0E58DC051DA3FA4D007C4646 /* PostSearchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchSpec.swift; sourceTree = "<group>"; };
 		0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
 		0E6856FD1D9AD1B700057ACC /* PostEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
@@ -231,6 +236,9 @@
 		0E7A53BD1D9D7E2F00135105 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0E7A53BF1D9D88E400135105 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0E7A53C11D9D8BA300135105 /* NetworkSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
+		0E7A53C41DA2C57200135105 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		0E7A53C61DA2C80700135105 /* PostSearching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearching.swift; sourceTree = "<group>"; };
+		0E7A53C81DA2C92300135105 /* PostSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearch.swift; sourceTree = "<group>"; };
 		0ED1A49F1D9441540034EDAE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		0ED1A4B91D94442F0034EDAE /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		0ED1A4BA1D94442F0034EDAE /* Himotoki.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Himotoki.framework.dSYM; path = Carthage/Build/iOS/Himotoki.framework.dSYM; sourceTree = "<group>"; };
@@ -467,6 +475,9 @@
 				0E7A53BB1D9D77BA00135105 /* Networking.swift */,
 				0E7A53BD1D9D7E2F00135105 /* Network.swift */,
 				0E7A53BF1D9D88E400135105 /* NetworkError.swift */,
+				0E7A53C41DA2C57200135105 /* PostRequest.swift */,
+				0E7A53C61DA2C80700135105 /* PostSearching.swift */,
+				0E7A53C81DA2C92300135105 /* PostSearch.swift */,
 			);
 			path = AlbumPosterModel;
 			sourceTree = "<group>";
@@ -481,6 +492,7 @@
 				0E7A53B71D9D747C00135105 /* AlbumEntitySpec.swift */,
 				0E7A53B91D9D75D800135105 /* PhotoEntitySpec.swift */,
 				0E7A53C11D9D8BA300135105 /* NetworkSpec.swift */,
+				0E58DC051DA3FA4D007C4646 /* PostSearchSpec.swift */,
 			);
 			path = AlbumPosterModelTests;
 			sourceTree = "<group>";
@@ -922,8 +934,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6857021D9AD2EA00057ACC /* AlbumEntity.swift in Sources */,
+				0E7A53C91DA2C92300135105 /* PostSearch.swift in Sources */,
 				0E7A53C01D9D88E400135105 /* NetworkError.swift in Sources */,
+				0E7A53C71DA2C80700135105 /* PostSearching.swift in Sources */,
 				0E7A53BC1D9D77BA00135105 /* Networking.swift in Sources */,
+				0E7A53C51DA2C57200135105 /* PostRequest.swift in Sources */,
 				0E7A53BE1D9D7E2F00135105 /* Network.swift in Sources */,
 				0E6856FE1D9AD1B700057ACC /* PostEntity.swift in Sources */,
 				0E6857001D9AD25B00057ACC /* UserEntity.swift in Sources */,
@@ -937,6 +952,7 @@
 			files = (
 				0E3CF6D11D9ADF8900C14245 /* PostEntitySpec.swift in Sources */,
 				0E7A53B81D9D747C00135105 /* AlbumEntitySpec.swift in Sources */,
+				0E58DC061DA3FA4D007C4646 /* PostSearchSpec.swift in Sources */,
 				0E7A53BA1D9D75D800135105 /* PhotoEntitySpec.swift in Sources */,
 				0E3CF6D21D9ADFA000C14245 /* FakeObjects.swift in Sources */,
 				0E7A53B61D9D63E700135105 /* UserEntitySpec.swift in Sources */,

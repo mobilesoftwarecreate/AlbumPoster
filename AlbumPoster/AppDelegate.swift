@@ -8,14 +8,43 @@
 
 import UIKit
 import CoreData
+import Swinject
+import SwinjectStoryboard
+import AlbumPosterModel
+import AlbumPosterViewModel
+import AlbumPosterView
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
 	var window: UIWindow?
 
-
+	let container = Container() { container in
+		//Models
+		container.register(Networking.self) { _ in Network() }
+		container.register(PostSearching.self) {
+			r in
+			PostSearch(network: r.resolve(Networking.self)!)
+		}
+		
+		//View models
+		container.register(PostSearchTableViewModeling.self) {
+			r in
+			PostSearchTableViewModel(postSearch: r.resolve(PostSearching.self)!)
+		}
+		
+		// Views
+		container.registerForStoryboard(PostSearchTableViewController.self) {
+			r, c in
+			c.viewModel = r.resolve(PostSearchTableViewModeling.self)!
+		}
+	}
+	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		
+		
+		
 		// Override point for customization after application launch.
 		//let splitViewController = self.window!.rootViewController as! UISplitViewController
 		//let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
@@ -25,6 +54,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		//let masterNavigationController = splitViewController.viewControllers[0] as! UINavigationController
 		//let controller = masterNavigationController.topViewController as! MasterViewController
 		//controller.managedObjectContext = self.persistentContainer.viewContext
+		
+		let window = UIWindow(frame: UIScreen.main.bounds)
+		window.backgroundColor = UIColor.white
+		window.makeKeyAndVisible()
+		self.window = window
+		
+		let bundle = Bundle(for: PostSearchTableViewController.self)
+		let storyboard = SwinjectStoryboard.create(name: "Main", bundle: bundle)
+		window.rootViewController = storyboard.instantiateInitialViewController()
+
+		
 		return true
 	}
 

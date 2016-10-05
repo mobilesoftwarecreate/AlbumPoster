@@ -13,6 +13,9 @@
 		0E3CF6D11D9ADF8900C14245 /* PostEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857071D9ADBDE00057ACC /* PostEntitySpec.swift */; };
 		0E3CF6D21D9ADFA000C14245 /* FakeObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6857051D9ADAAA00057ACC /* FakeObjects.swift */; };
 		0E58DC061DA3FA4D007C4646 /* PostSearchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58DC051DA3FA4D007C4646 /* PostSearchSpec.swift */; };
+		0E58DC081DA41623007C4646 /* PostSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58DC071DA41623007C4646 /* PostSearchTableViewController.swift */; };
+		0E58DC0A1DA4168F007C4646 /* PostSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58DC091DA4168F007C4646 /* PostSearchTableViewCell.swift */; };
+		0E58DC0C1DA41753007C4646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E58DC0B1DA41753007C4646 /* Main.storyboard */; };
 		0E60676D1D944D6A0039A5CC /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */; };
 		0E60676F1D944D860039A5CC /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */; };
 		0E6856FE1D9AD1B700057ACC /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6856FD1D9AD1B700057ACC /* PostEntity.swift */; };
@@ -61,12 +64,15 @@
 		0ED1A4C81D94442F0034EDAE /* Result.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4BF1D94442F0034EDAE /* Result.framework.dSYM */; };
 		0ED1A4C91D94442F0034EDAE /* Swinject.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4C01D94442F0034EDAE /* Swinject.framework.dSYM */; };
 		0ED1A4CA1D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 0ED1A4C11D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM */; };
+		0ED700311DA565D3002D8681 /* PostSearchTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED700301DA565D3002D8681 /* PostSearchTableViewModeling.swift */; };
+		0ED700331DA56603002D8681 /* PostSearchTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED700321DA56603002D8681 /* PostSearchTableViewModel.swift */; };
+		0ED700351DA56941002D8681 /* PostSearchTableViewCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED700341DA56941002D8681 /* PostSearchTableViewCellModeling.swift */; };
+		0ED700371DA5699E002D8681 /* PostSearchTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED700361DA5699E002D8681 /* PostSearchTableViewCellModel.swift */; };
+		0ED7003E1DA56D4F002D8681 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED7003D1DA56D4F002D8681 /* AppDelegateSpec.swift */; };
 		0EF100651D9187CB0013FFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF100641D9187CB0013FFCC /* AppDelegate.swift */; };
 		0EF100681D9187CB0013FFCC /* AlbumPoster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EF100661D9187CB0013FFCC /* AlbumPoster.xcdatamodeld */; };
-		0EF1006F1D9187CB0013FFCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF1006D1D9187CB0013FFCC /* Main.storyboard */; };
 		0EF100711D9187CB0013FFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF100701D9187CB0013FFCC /* Assets.xcassets */; };
 		0EF100741D9187CB0013FFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */; };
-		0EF1007F1D9187CB0013FFCC /* AlbumPosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */; };
 		0EF100971D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
 		0EF100A01D9189070013FFCC /* AlbumPosterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF100901D9189070013FFCC /* AlbumPosterModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EF100A31D9189070013FFCC /* AlbumPosterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */; };
@@ -221,6 +227,9 @@
 		0E068DD51D943C2D000BA0AF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0E068DD71D943E1E000BA0AF /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0E58DC051DA3FA4D007C4646 /* PostSearchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchSpec.swift; sourceTree = "<group>"; };
+		0E58DC071DA41623007C4646 /* PostSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewController.swift; sourceTree = "<group>"; };
+		0E58DC091DA4168F007C4646 /* PostSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewCell.swift; sourceTree = "<group>"; };
+		0E58DC0B1DA41753007C4646 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0E60676C1D944D6A0039A5CC /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		0E60676E1D944D860039A5CC /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
 		0E6856FD1D9AD1B700057ACC /* PostEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
@@ -249,15 +258,19 @@
 		0ED1A4BF1D94442F0034EDAE /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
 		0ED1A4C01D94442F0034EDAE /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/iOS/Swinject.framework.dSYM; sourceTree = "<group>"; };
 		0ED1A4C11D94442F0034EDAE /* SwinjectStoryboard.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwinjectStoryboard.framework.dSYM; path = Carthage/Build/iOS/SwinjectStoryboard.framework.dSYM; sourceTree = "<group>"; };
+		0ED700301DA565D3002D8681 /* PostSearchTableViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewModeling.swift; sourceTree = "<group>"; };
+		0ED700321DA56603002D8681 /* PostSearchTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewModel.swift; sourceTree = "<group>"; };
+		0ED700341DA56941002D8681 /* PostSearchTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewCellModeling.swift; sourceTree = "<group>"; };
+		0ED700361DA5699E002D8681 /* PostSearchTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewCellModel.swift; sourceTree = "<group>"; };
+		0ED7003D1DA56D4F002D8681 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		0ED700451DA56F34002D8681 /* AlbumPosterTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AlbumPosterTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		0EF100611D9187CB0013FFCC /* AlbumPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF100641D9187CB0013FFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF100671D9187CB0013FFCC /* AlbumPoster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlbumPoster.xcdatamodel; sourceTree = "<group>"; };
-		0EF1006E1D9187CB0013FFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EF100701D9187CB0013FFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EF100731D9187CB0013FFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EF100751D9187CB0013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF1007A1D9187CB0013FFCC /* AlbumPosterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumPosterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosterTests.swift; sourceTree = "<group>"; };
 		0EF100801D9187CB0013FFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF1008E1D9189070013FFCC /* AlbumPosterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlbumPosterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF100901D9189070013FFCC /* AlbumPosterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumPosterModel.h; sourceTree = "<group>"; };
@@ -445,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				0EF100641D9187CB0013FFCC /* AppDelegate.swift */,
-				0EF1006D1D9187CB0013FFCC /* Main.storyboard */,
 				0EF100701D9187CB0013FFCC /* Assets.xcassets */,
 				0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */,
 				0EF100751D9187CB0013FFCC /* Info.plist */,
@@ -457,8 +469,9 @@
 		0EF1007D1D9187CB0013FFCC /* AlbumPosterTests */ = {
 			isa = PBXGroup;
 			children = (
-				0EF1007E1D9187CB0013FFCC /* AlbumPosterTests.swift */,
 				0EF100801D9187CB0013FFCC /* Info.plist */,
+				0ED7003D1DA56D4F002D8681 /* AppDelegateSpec.swift */,
+				0ED700451DA56F34002D8681 /* AlbumPosterTests-Bridging-Header.h */,
 			);
 			path = AlbumPosterTests;
 			sourceTree = "<group>";
@@ -502,6 +515,10 @@
 			children = (
 				0EF100B31D9189460013FFCC /* AlbumPosterViewModel.h */,
 				0EF100B41D9189460013FFCC /* Info.plist */,
+				0ED700301DA565D3002D8681 /* PostSearchTableViewModeling.swift */,
+				0ED700321DA56603002D8681 /* PostSearchTableViewModel.swift */,
+				0ED700341DA56941002D8681 /* PostSearchTableViewCellModeling.swift */,
+				0ED700361DA5699E002D8681 /* PostSearchTableViewCellModel.swift */,
 			);
 			path = AlbumPosterViewModel;
 			sourceTree = "<group>";
@@ -520,6 +537,9 @@
 			children = (
 				0EF100D51D9189870013FFCC /* AlbumPosterView.h */,
 				0EF100D61D9189870013FFCC /* Info.plist */,
+				0E58DC071DA41623007C4646 /* PostSearchTableViewController.swift */,
+				0E58DC091DA4168F007C4646 /* PostSearchTableViewCell.swift */,
+				0E58DC0B1DA41753007C4646 /* Main.storyboard */,
 			);
 			path = AlbumPosterView;
 			sourceTree = "<group>";
@@ -774,6 +794,7 @@
 					0EF100B01D9189460013FFCC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					0EF100B81D9189460013FFCC = {
@@ -786,6 +807,7 @@
 					0EF100D21D9189870013FFCC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DM3YMKBS2W;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					0EF100DA1D9189870013FFCC = {
@@ -829,7 +851,6 @@
 			files = (
 				0EF100741D9187CB0013FFCC /* LaunchScreen.storyboard in Resources */,
 				0EF100711D9187CB0013FFCC /* Assets.xcassets in Resources */,
-				0EF1006F1D9187CB0013FFCC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +894,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E58DC0C1DA41753007C4646 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,7 +947,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF1007F1D9187CB0013FFCC /* AlbumPosterTests.swift in Sources */,
+				0ED7003E1DA56D4F002D8681 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +986,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED700311DA565D3002D8681 /* PostSearchTableViewModeling.swift in Sources */,
+				0ED700371DA5699E002D8681 /* PostSearchTableViewCellModel.swift in Sources */,
+				0ED700331DA56603002D8681 /* PostSearchTableViewModel.swift in Sources */,
+				0ED700351DA56941002D8681 /* PostSearchTableViewCellModeling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,6 +1005,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E58DC081DA41623007C4646 /* PostSearchTableViewController.swift in Sources */,
+				0E58DC0A1DA4168F007C4646 /* PostSearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1056,14 +1084,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EF1006D1D9187CB0013FFCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EF1006E1D9187CB0013FFCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EF100721D9187CB0013FFCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1211,6 +1231,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DM3YMKBS2W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1220,6 +1241,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlbumPosterTests/AlbumPosterTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
@@ -1230,6 +1253,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DM3YMKBS2W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1239,6 +1263,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlbumPosterTests/AlbumPosterTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumPoster.app/AlbumPoster";
 			};
@@ -1338,6 +1363,7 @@
 		0EF100C91D9189460013FFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1355,6 +1381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterViewModel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1364,6 +1391,7 @@
 		0EF100CA1D9189460013FFCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1426,6 +1454,7 @@
 		0EF100EB1D9189880013FFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1443,6 +1472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-szafranski.AlbumPosterView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1452,6 +1482,7 @@
 		0EF100EC1D9189880013FFCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

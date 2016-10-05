@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eiK-6p-rtA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xQ8-Lz-dEu">
+            <objects>
+                <viewController id="ZGf-1W-wiH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bsv-Rj-E2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="d17-Yh-tmq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S2H-89-hb3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pf-0l-xN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186" y="72"/>
+        </scene>
+        <!--Posts Search-->
+        <scene sceneID="qfO-BJ-hh7">
+            <objects>
+                <tableViewController storyboardIdentifier="PostSearchTableViewController" title="Posts Search" clearsSelectionOnViewWillAppear="NO" id="RQb-gQ-woj" customClass="PostSearchTableViewController" customModule="AlbumPosterView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XBB-Ao-Oxa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostSearchTableViewCell" id="oAh-2w-4A0" customClass="PostSearchTableViewCell" customModule="AlbumPosterView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oAh-2w-4A0" id="uZX-hP-7Ux">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RQb-gQ-woj" id="Byb-FK-IQk"/>
+                            <outlet property="delegate" destination="RQb-gQ-woj" id="UN4-vN-qfp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Posts" id="glq-ev-UzK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suf-vC-noF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="-583"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K5c-gV-3Xq">
+            <objects>
+                <navigationController id="IkF-P7-PBZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pGE-eq-QQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RQb-gQ-woj" kind="relationship" relationship="rootViewController" id="aML-Gc-b7M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfs-uO-bRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186" y="-583"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="md5-9r-xmh">
+            <objects>
+                <splitViewController id="eiK-6p-rtA" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="IkF-P7-PBZ" kind="relationship" relationship="masterViewController" id="fRY-8m-Hjm"/>
+                        <segue destination="ZGf-1W-wiH" kind="relationship" relationship="detailViewController" id="Rcs-VS-j4q"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lT8-qz-qsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1138" y="-256"/>
+        </scene>
+    </scenes>
+</document>
